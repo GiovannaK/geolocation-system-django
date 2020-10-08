@@ -1,0 +1,36 @@
+{% extends 'location/base.html' %}
+{% load static %}
+{% block content %}
+<main>
+	<div class="container">
+		<div class="row">
+			<div class="col s12 m10 l8 offset-m1 offset-l2">
+			  	<div class="card white">
+					<div class="card-content white-text card-search">
+						  <span class="card-title search-title center">Destino</span>
+						  <div class="row">
+							<form class="col s10 m10 l10 offset-l2 offset-m2 offset-s2">
+							  	<div class="row">
+									<div class="input-field col s8 m10 l10 input-search">
+									  	<i class="material-icons prefix location-icon">edit_location</i>
+									  	<textarea id="icon_prefix2" class="materialize-textarea input-text"></textarea>
+									</div>
+							  	</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12 m10 l8 offset-m1 offset-l2">
+			  	<div class="card white">
+					<div class="card-content white-text card-map">
+					  	<span class="card-title black-text center">MAPA</span>
+					</div>
+			  	</div>
+			</div>
+		</div>
+	</div>
+</main>
+{% endblock %}

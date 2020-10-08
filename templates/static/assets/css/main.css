@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  min-width: 100vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  margin-top: 5vh;
+}
+
+.navbar {
+  background: linear-gradient(145deg, #6e6e6e 0%, black 35%, #707070 100%);
+}
+
+.footer-content {
+  background: linear-gradient(145deg, #6e6e6e 0%, black 35%, #707070 100%);
+}
+
+.card-search, .card-map {
+  -webkit-box-shadow: 2px 7px 8px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 7px 8px 3px rgba(0, 0, 0, 0.5);
+}
+
+.search-title {
+  font-family: Verdana, Tahoma, sans-serif;
+  text-transform: uppercase;
+  color: black;
+  letter-spacing: 2px;
+}
+
+.input-text:focus {
+  border-bottom: black !important;
+  -webkit-box-shadow: 0 1px 0 0 black !important;
+          box-shadow: 0 1px 0 0 black !important;
+}
+
+.location-icon {
+  color: black;
+}
+
+.logo {
+  font-family: Verdana, Tahoma, sans-serif;
+  text-shadow: 2px 3px 2px #47BF9F;
+}
+/*# sourceMappingURL=main.css.map */

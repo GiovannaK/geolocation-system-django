@@ -1,0 +1,61 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="{% static 'assets/css/main.css' %}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<!-- navbar -->
+<header>
+	<nav>
+		<div class="nav-wrapper navbar">
+		  	<a href="#!" class="brand-logo logo center">HowFar?</a>
+		  	<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+		  	<ul class="right hide-on-med-and-down">
+				<li><a href="sass.html">Sass</a></li>
+				<li><a href="badges.html">Components</a></li>
+				<li><a href="collapsible.html">Javascript</a></li>
+				<li><a href="mobile.html">Mobile</a></li>
+		  	</ul>
+		</div>
+	</nav>
+	
+	  	<ul class="sidenav" id="mobile-demo">
+			<li><a href="sass.html">Sass</a></li>
+			<li><a href="badges.html">Components</a></li>
+			<li><a href="collapsible.html">Javascript</a></li>
+			<li><a href="mobile.html">Mobile</a></li>
+	  	</ul>
+</header>
+
+{% block content %}
+
+{% endblock %}
+
+<!--Footer-->
+<footer class="page-footer footer-content">
+	<div class="container">
+	  	<div class="row">
+			<div class="col l6 s12">
+		  		<h5 class="white-text logo">HowFar?</h5>
+		  		<p class="grey-text text-lighten-4">Calcule a distância entre qualquer localidade</p>
+			</div>
+	  	</div>
+	</div>
+	<div class="footer-copyright">
+	  	<div class="container center">
+	  		HowFar? Copyright ©2020  
+	  	</div>
+	</div>
+</footer>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="{% static 'assets/js/main.js' %}"></script>
+</html>
