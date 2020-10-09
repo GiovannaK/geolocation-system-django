@@ -9,11 +9,12 @@
 					<div class="card-content white-text card-search">
 						<span class="card-title search-title center">Destino</span>
 						<div class="row">
-							<form class="col s10 m10 l10 offset-l2 offset-m2 offset-s2">
+							<form action="" method="POST" autocomplete="off" class="col s10 m10 l10 offset-l2 offset-m2 offset-s2">
+								{% csrf_token %}
 							  	<div class="row">
 									<div class="input-field col s8 m10 l10 input-search">
 									  	<i class="material-icons prefix location-icon">edit_location</i>
-										<textarea id="icon_prefix2" class="materialize-textarea input-text"></textarea>
+										{{form}}
 										<span class="helper-text red-text"></span>
 									</div>
 							  	</div>
