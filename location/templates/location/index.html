@@ -15,10 +15,12 @@
 									<div class="input-field col s8 m10 l10 input-search">
 									  	<i class="material-icons prefix location-icon">edit_location</i>
 										{{form}}
-										<span class="helper-text red-text"></span>
 									</div>
 							  	</div>
 							</form>
+							{% if request.POST %}
+								<p class="black-text card-title center">{{distance}} KM</p>
+							{% endif %}
 						</div>
 					</div>
 				</div>
@@ -28,7 +30,8 @@
 			<div class="col s12 m10 l8 offset-m1 offset-l2">
 			  	<div class="card white">
 					<div class="card-content white-text card-map">
-					  	<span class="card-title black-text center">MAPA</span>
+						<span class="card-title black-text center">MAPA</span>
+						{{map | safe}}  
 					</div>
 			  	</div>
 			</div>

@@ -58,4 +58,8 @@ main {
   font-family: Verdana, Tahoma, sans-serif;
   text-shadow: 2px 3px 2px #47BF9F;
 }
+
+.distance-text {
+  font-size: 300px;
+}
 /*# sourceMappingURL=main.css.map */
