@@ -16,7 +16,6 @@ def calculate_distance(request):
 
     ip = get_ip(request)
     
-    ip = '191.248.99.252'
     country, city, lat, lon = get_geo(ip)
     location = geolocator.geocode(city)
 
