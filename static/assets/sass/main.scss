@@ -1,0 +1,56 @@
+@import "variables";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+    flex-direction: column;
+}
+
+main{
+    flex: 1 0 auto;   
+    margin-top: 5vh;
+}
+
+.navbar{
+    background: $bg-gradient-light-mode;
+}
+
+.footer-content{
+    background: $bg-gradient-light-mode;
+}
+
+.card-search, .card-map{
+    box-shadow: $box-shadow;
+}
+
+.search-title{
+    font-family: $font-family;
+    text-transform: uppercase;
+    color: $card-search-color;
+    letter-spacing: 2px;
+}
+
+.input-text:focus{
+    border-bottom: $input-text-border;
+    box-shadow: $input-text-box-shadow;
+}
+
+.location-icon{
+    color: $location-icon-color;
+}
+
+.logo{
+    font-family: $font-family;
+    text-shadow: $logo-text-shadow;
+}
+
+.distance-text{
+    font-size: 300px;
+}
